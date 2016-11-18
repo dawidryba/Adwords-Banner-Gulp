@@ -5,15 +5,38 @@
 @import 'variables';
 @import 'fonts';
 @import 'sizes';
+//@import 'sizes/x160x600';
+//@import 'sizes/x120x600';
+//@import 'sizes/x300x250';
+@import 'sizes/x300x600';
+//@import 'sizes/x468x60';
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+
+}
 
 body,
 html {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
 }
 
 .container {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
+}
+
+.container {
+  //background-image: url('../../bg.png');
+  //background-position: left top;
+  //background-repeat: no-repeat;
 }

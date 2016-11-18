@@ -1,0 +1,248 @@
+.notrans {
+  @include transition( 'unset !important');
+}
+
+.logo {
+  left: 100%;
+  padding: 0 3px;
+  position: absolute;
+  top: 9px;
+  width: 300px;
+  @include transition( '500ms ease-in-out 500ms');
+
+  &.animate {
+    left: 0;
+  }
+}
+
+.slogan1 {
+  color: $blue;
+  font-size: 13.7px;
+  line-height: 19px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 72px;
+  width: 164px;
+  right: -100%;
+  @include transition( '500ms ease-in-out 700ms');
+
+  &.animate {
+    right: 120px;
+  }
+}
+
+.slogan2 {
+  color: $blue;
+  font-size: 33px;
+  font-weight: 700;
+  left: 17px;
+  line-height: 41px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 112px;
+
+  span {
+    display: block;
+    @include transform( 'scale(0,0)');
+
+    &.fir {
+      &.animate {
+        @include animation( 'bounce-text 800ms linear 1000ms forwards');
+      }
+    }
+
+    &.sec {
+      &.animate {
+        @include animation( 'bounce-text 800ms linear 1800ms forwards');
+      }
+    }
+
+    &.thr {
+      &.animate {
+        @include animation( 'bounce-text 800ms linear 2600ms forwards');
+      }
+    }
+
+  }
+}
+
+.link {
+  color: $blue;
+  font-size: 14px;
+  left: -100%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 257px;
+  @include transition( '500ms ease-in-out 700ms');
+
+  &.animate {
+    left: 16px;
+  }
+}
+
+.sep {
+  @include border-radius( '0 2px 2px 0');
+  background: $whiteblue;
+  height: 4px;
+  left: -100%;
+  position: absolute;
+  top: 247px;
+  width: 226px;
+  @include transition( '500ms ease-in-out 700ms');
+
+  &.animate {
+    left: 0;
+  }
+}
+
+.picture {
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 263px;
+  @include transition( '500ms ease-in-out 0ms');
+
+  &.animate {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.click {
+  background: $whiteblue;
+  color: $white;
+  font-family: sans-serif;
+  font-size: 14px;
+  left: 100%;
+  padding: 3.5px 29px;
+  position: absolute;
+  top: 559px;
+  @include transition( '500ms ease-in-out 3400ms');
+
+  &.animate {
+    left: 185px;
+    @include animation( 'click 800ms ease-in 3900ms forwards');
+  }
+}
+@keyframes bounce-text {
+  0% {
+    @include transform( 'scale(0,0)');
+    color: $blue;
+  }
+
+  50% {
+    @include transform( 'scale(1.2,1.2)');
+    color: $whiteblue;
+  }
+
+  100% {
+    @include transform( 'scale(1,1)');
+    color: $blue;
+  }
+}
+@keyframes click {
+  0% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  10% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  20% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  30% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  40% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  50% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  60% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  70% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  80% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  90% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  100% {
+    @include transform( 'rotate(0deg)');
+  }
+}
+@-webkit-keyframes bounce-text {
+  0% {
+    @include transform( 'scale(0,0)');
+    color: $blue;
+  }
+
+  50% {
+    @include transform( 'scale(1.2,1.2)');
+    color: $whiteblue;
+  }
+
+  100% {
+    @include transform( 'scale(1,1)');
+    color: $blue;
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  10% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  20% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  30% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  40% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  50% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  60% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  70% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  80% {
+    @include transform( 'rotate(4deg)');
+  }
+
+  90% {
+    @include transform( 'rotate(-4deg)');
+  }
+
+  100% {
+    @include transform( 'rotate(0deg)');
+  }
+}
