@@ -6,6 +6,12 @@
 @import 'fonts';
 @import 'sizes';
 
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   margin: 0;
   padding: 0;
