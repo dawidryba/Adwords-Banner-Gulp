@@ -1,0 +1,32 @@
+{
+  "name": "theme-for-bajka-bydgoszcz",
+  "version": "1.0.0",
+  "description": "New theme Wodpress for bajka.bydgoszcz.pl",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-haml": "0.0.9",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Dawid Rybacki GrupaZAKI",
+  "license": "ISC",
+  "homepage": "http://www.grupazaki.pl"
+}
