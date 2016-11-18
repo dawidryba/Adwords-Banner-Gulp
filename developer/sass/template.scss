@@ -1,23 +1,13 @@
-$domain: 'http://bajka.localhost/';
 @-ms-viewport {
   width: device-width;
 }
-@import 'bootstrap-sass/bootstrap';
-@import 'fontawesome/font-awesome';
 @import 'mixins';
 @import 'variables';
-@import 'mainstyles';
 @import 'fonts';
-@import 'typography';
-@import 'main/main';
-@import 'main/category';
-@import 'main/single';
-@import 'header/header';
-@import 'footer/footer';
-@import 'main/page-gallery';
-// Responsive
-@import 'responsive/responsive';
-@import 'responsive/mobile_menu';
+@import 'sizes';
 
-// Wordpress styles
-@import 'wordpress/text_style';
+.container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
